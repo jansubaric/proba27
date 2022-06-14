@@ -1,0 +1,16 @@
+  name: update_readme
+  on:
+    issues:
+      types: [closed]	
+
+  jobs:
+    update: 
+      runs-on: ubuntu-latest 
+      steps:
+        - name: Update GitHub Profile README
+          uses: theboi/github-update-readme@v1.3.0
+          env: 
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          with:
+            subhead: "Latest issue closed by {{github.actor}}"
+		repoCount: 0
