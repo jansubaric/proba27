@@ -1,6 +1,6 @@
 ## 
 
-Latest issue closed by {{github.actor}}
+Latest issue closed by jansubaric
 
 ---
 
